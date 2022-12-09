@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Search from "./Search";
 import HistoryOfLikes from "./HistoryOfLikes";
 import AddDrinkForm from "./AddDrinkForm";
 
-function NavBar() {
+function NavBar({ drinkList, setDrinkList, setSubmittedSearch }) {
+  const [showForm, setShowForm] = useState(false);
+  function showOrHideForm() {
+    setShowForm(!showForm);
+  }
+
   return (
     <header>
-      <Search />
+      <Search setSubmittedSearch={setSubmittedSearch} />
       <HistoryOfLikes />
-      <AddDrinkForm />
+      <button onClick={showOrHideForm}>➕</button>
+      {showForm ? (
+        <AddDrinkForm drinkList={drinkList} setDrinkList={setDrinkList} />
+      ) : null}
     </header>
   );
 }

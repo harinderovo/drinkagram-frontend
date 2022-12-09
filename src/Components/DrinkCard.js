@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
-function DrinkCard({ drink }) {
-  const { name, image, likes, season, description } = drink;
+function DrinkCard({ drink, onUpdateDrink }) {
+  const { id, name, image, likes, season, description } = drink;
 
-  const [liked, setLiked] = useState(false);
+  function handleLikes() {
+    const updateLikesObj = {
+      likes: drink.likes + 1,
+    };
 
-  function likeButton() {
-    setLiked(!liked);
+    fetch(`http://localhost:3000/Drinks/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updateLikesObj),
+    })
+      .then((r) => r.json())
+      .then(onUpdateDrink);
   }
 
   return (
@@ -15,15 +23,9 @@ function DrinkCard({ drink }) {
       <h4>{season}</h4>
       <div className="image">
         <img src={image} alt={name} />
-        {liked ? (
-          <button onClick={likeButton} className="emoji-button-liked">
-            ♥
-          </button>
-        ) : (
-          <button onClick={likeButton} className="emoji-button">
-            ♡
-          </button>
-        )}
+        <button onClick={handleLikes} className="emoji-button-liked">
+          ♥
+        </button>
         <span className="likes">{likes} Likes</span>
       </div>
       <p>{description}</p>
