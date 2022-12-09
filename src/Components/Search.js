@@ -13,13 +13,14 @@ function Search({ setSubmittedSearch }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="searchbar">
+    <form onSubmit={handleSubmit}>
       <input
+        className="search-box"
         onChange={handleSearch}
         value={search}
         type="text"
         id="search"
-        placeholder="search for your favorite seasonal drink..."
+        placeholder="Search..."
       />
       <button type="submit">🔍</button>
     </form>

@@ -2,11 +2,11 @@ import React from "react";
 
 function HistoryOfLikes({ likedDrinkNames }) {
   return (
-    <ul>
+    <div className="like-history">
       {likedDrinkNames.map((name) => (
-        <li>you liked {name}</li>
+        <p className="like-entry">You liked {name}!</p>
       ))}
-    </ul>
+    </div>
   );
 }
 

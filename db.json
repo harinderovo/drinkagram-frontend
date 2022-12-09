@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Peppermint Mocha",
       "image": "https://www.groundstobrew.com/wp-content/uploads/2021/07/starbucks-peppermint-drinks.jpg",
-      "likes": 18,
+      "likes": 1,
       "season": "Winter",
       "description": "A blend of espresso, steamed milk, peppermint-flavored syrup and mocha sauce gets topped with whipped cream and dark-chocolate curls."
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Irish Cream Cold Brew",
       "image": "https://i0.wp.com/www.coldbrewchick.com/wp-content/uploads/2020/01/starbucks-irish-creme.jpg?resize=650%2C650&ssl=1",
-      "likes": 13,
+      "likes": 3,
       "season": "Winter",
       "description": "Starbucks® Cold Brew with Irish cream-flavored syrup is finished with vanilla-flavored sweet cream cold foam and a strike of cocoa powder."
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "name": "Iced Sugar Cookie Almondmilk Latte",
       "image": "https://hips.hearstapps.com/hmg-prod/images/sbx20211103-hol-launch-sugarcookielatte-1024x1024-1635986292.png",
-      "likes": 11,
+      "likes": 1,
       "season": "Winter",
       "description": "Starbucks® Blonde Espresso Roast is blended with sugar cookie flavors and almondmilk on ice. For the finishing touch: red and green sprinkles."
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "name": "Caramel Brulée Latte",
       "image": "https://www.groundstobrew.com/wp-content/uploads/2021/11/starbucks-caramel-brulee-latte.jpg",
-      "likes": 4,
+      "likes": 8,
       "season": "Winter",
       "description": "Espresso, steamed milk and caramel brulée sauce are finished with whipped cream and a crunchy caramel brulée topping."
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "name": "Signature Hot Chocolate",
       "image": "https://cdn.nunuchocolates.com/1665388877822.jpg",
-      "likes": 3,
+      "likes": 9,
       "season": "Winter",
       "description": "A holiday classic with steamed milk, whipped cream and chocolaty drizzle."
     },
@@ -60,7 +60,7 @@
       "id": 8,
       "name": "Pumpkin Spice Latte",
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Starbucks_Grande_Iced_Pumpkin_Spice_Latte.jpg",
-      "likes": 8,
+      "likes": 9,
       "season": "Fall",
       "description": "Signature espresso and steamed milk with the celebrated flavor combination of pumpkin, cinnamon, nutmeg and clove. Enjoy it topped with whipped cream and real pumpkin-pie spices."
     },
@@ -68,7 +68,7 @@
       "id": 9,
       "name": "Pumpkin Cream Cold Brew",
       "image": "https://wearenotmartha.com/wp-content/uploads/pumpkin-cream-cold-brew-lead-683x1024.jpg",
-      "likes": 0,
+      "likes": 1,
       "season": "Fall",
       "description": "Starbucks® Cold Brew sweetened with vanilla syrup and topped with a pumpkin cream cold foam and a dusting of pumpkin spice topping."
     },
@@ -92,7 +92,7 @@
       "id": 12,
       "name": "Pumpkin Spice Macchiato",
       "image": "https://assets.teenvogue.com/photos/59d93a70723d5853b1508152/2:3/w_712,h_1068,c_limit/starbucks-tout.jpg",
-      "likes": 0,
+      "likes": 7,
       "season": "Fall",
       "description": "A secret menu. A fantastic pairing of Iced Caramel Macchiato and pumpkin sauce! A hidden gem, indeed."
     },
@@ -100,7 +100,7 @@
       "id": 13,
       "name": "Cinnamon Dolce Latte",
       "image": "https://thehealthfulideas.com/wp-content/uploads/2022/05/Iced-Cinnamon-Dolce-Latte-SQUARE.jpg",
-      "likes": 0,
+      "likes": 1,
       "season": "Fall",
       "description": "We add freshly steamed milk and cinnamon dolce-flavored syrup to our classic espresso, topped with sweetened whipped cream and a cinnamon dolce topping to bring you specialness in a treat."
     },
@@ -108,41 +108,9 @@
       "id": 14,
       "name": "Pumpkin Spice Flat White",
       "image": "https://people.com/thmb/VrWBCbLjxyTK2n_jlVeUK9HcpY8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(299x0:301x2)/flat-white-600x800-2d12b26122b8455fb0cb1ac2bb16c16d.jpg",
-      "likes": 0,
+      "likes": 1,
       "season": "Fall",
       "description": "A perfect mix and match of fall and winter! A heartwarming mixture of a classic flat white with pumpkin spice to add a taste of autumn."
-    },
-    {
-      "likes": 6,
-      "name": "new drink",
-      "image": "https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/l-intro-1645231221.jpg",
-      "season": "any season",
-      "description": "just a regular coffee",
-      "id": 15
-    },
-    {
-      "likes": 6,
-      "name": "new drink",
-      "image": "https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/l-intro-1645231221.jpg",
-      "season": "winter",
-      "description": "a regular coffee",
-      "id": 16
-    },
-    {
-      "likes": 5,
-      "name": "my new favorite drink",
-      "image": "https://www.nestlecoffeepartnerssl.com/media/wysiwyg/public/starbucks/WPS_Portal_Desktop_HandcraftedBlendedAnd.jpg",
-      "season": "winter",
-      "description": "yummm :-)",
-      "id": 17
-    },
-    {
-      "likes": 0,
-      "name": "hello",
-      "image": "https://cdn.vox-cdn.com/thumbor/-sfnWHj6qddVseSncj6E1bnrQfM=/0x0:1333x2000/1200x900/filters:focal(513x1208:725x1420)/cdn.vox-cdn.com/uploads/chorus_image/image/58841109/202109_Equator_Coffees_at_Round_House_Cafe_Images_and_Press_Release_Credit_Equator_Coffees_013.91.jpg",
-      "season": "fall",
-      "description": "hi!",
-      "id": 18
     }
   ]
 }
