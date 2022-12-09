@@ -1,20 +1,34 @@
 import React, { useEffect, useState } from "react";
 import DrinkCard from "./DrinkCard";
 
-function DrinkContainer() {
-  const API = "http://localhost:3000/Drinks";
-  const [drinkList, setDrinkList] = useState([]);
-
-  useEffect(() => {
-    fetch(API)
-      .then((r) => r.json())
-      .then((json) => setDrinkList(json));
-  }, []);
+function DrinkContainer({
+  drinkList,
+  setDrinkList,
+  submittedSearch,
+  addDrinkLike,
+}) {
+  function updateDrinkLikes(updatedDrinkLikes) {
+    addDrinkLike(updatedDrinkLikes.id);
+    const updateDrinkLikes = drinkList.map((drink) =>
+      drink.id === updatedDrinkLikes.id ? updatedDrinkLikes : drink
+    );
+    setDrinkList(updateDrinkLikes);
+  }
 
   function renderDrinkList() {
-    return drinkList.map((drink) => {
-      return <DrinkCard key={drink.id} drink={drink} />;
-    });
+    return drinkList
+      .filter((drink) =>
+        drink.name.toLowerCase().includes(submittedSearch.toLowerCase())
+      )
+      .map((drink) => {
+        return (
+          <DrinkCard
+            key={drink.id}
+            drink={drink}
+            onUpdateDrink={updateDrinkLikes}
+          />
+        );
+      });
   }
 
   return (

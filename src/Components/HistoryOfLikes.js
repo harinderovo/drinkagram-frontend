@@ -1,7 +1,13 @@
 import React from "react";
 
-function HistoryOfLikes() {
-  return <div></div>;
+function HistoryOfLikes({ likedDrinkNames }) {
+  return (
+    <ul>
+      {likedDrinkNames.map((name) => (
+        <li>you liked {name}</li>
+      ))}
+    </ul>
+  );
 }
 
 export default HistoryOfLikes;
