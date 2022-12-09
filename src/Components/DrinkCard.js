@@ -18,17 +18,21 @@ function DrinkCard({ drink, onUpdateDrink }) {
   }
 
   return (
-    <li className="card">
-      <h2>{name}</h2>
-      <h4>{season}</h4>
-      <div className="image">
-        <img src={image} alt={name} />
-        <button onClick={handleLikes} className="emoji-button-liked">
-          ♥
-        </button>
-        <span className="likes">{likes} Likes</span>
+    <li className="image-container">
+      <div className="image-card">
+        <h2 className="title">{name}</h2>
+        <h4 className="season">{season}</h4>
+        <img src={image} className="image" alt={name} />
+        <div className="likes-section">
+          <button onClick={handleLikes} className="like-button">
+            ♥
+          </button>
+          <span className="likes">{likes} Likes</span>
+        </div>
+        <div className="description-list">
+          <p className="description">{description}</p>
+        </div>
       </div>
-      <p>{description}</p>
     </li>
   );
 }

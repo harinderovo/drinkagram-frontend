@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Peppermint Mocha",
       "image": "https://www.groundstobrew.com/wp-content/uploads/2021/07/starbucks-peppermint-drinks.jpg",
-      "likes": 10,
+      "likes": 18,
       "season": "Winter",
       "description": "A blend of espresso, steamed milk, peppermint-flavored syrup and mocha sauce gets topped with whipped cream and dark-chocolate curls."
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Irish Cream Cold Brew",
       "image": "https://i0.wp.com/www.coldbrewchick.com/wp-content/uploads/2020/01/starbucks-irish-creme.jpg?resize=650%2C650&ssl=1",
-      "likes": 11,
+      "likes": 13,
       "season": "Winter",
       "description": "Starbucks® Cold Brew with Irish cream-flavored syrup is finished with vanilla-flavored sweet cream cold foam and a strike of cocoa powder."
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "name": "Iced Sugar Cookie Almondmilk Latte",
       "image": "https://hips.hearstapps.com/hmg-prod/images/sbx20211103-hol-launch-sugarcookielatte-1024x1024-1635986292.png",
-      "likes": 9,
+      "likes": 11,
       "season": "Winter",
       "description": "Starbucks® Blonde Espresso Roast is blended with sugar cookie flavors and almondmilk on ice. For the finishing touch: red and green sprinkles."
     },
