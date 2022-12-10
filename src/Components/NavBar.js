@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Search from "./Search";
 import HistoryOfLikes from "./HistoryOfLikes";
 import AddDrinkForm from "./AddDrinkForm";
+import logo_transparent from "../logo_transparent.png";
 
 function NavBar({
   drinkList,
@@ -20,17 +21,26 @@ function NavBar({
   }
 
   return (
-    <header>
-      <Search setSubmittedSearch={setSubmittedSearch} />
-      <button onClick={showOrHideLikeHistory}>❤️</button>
-      {showLikeHistory ? (
-        <HistoryOfLikes likedDrinkNames={likedDrinkNames} />
-      ) : null}
-      <button onClick={showOrHideForm}>➕</button>
-      {showForm ? (
-        <AddDrinkForm drinkList={drinkList} setDrinkList={setDrinkList} />
-      ) : null}
-    </header>
+    <nav className="navbar">
+      <div className="nav-wrapper">
+        <img src={logo_transparent} className="brand-img" alt="brand-logo" />
+        <Search setSubmittedSearch={setSubmittedSearch} />
+        <div className="nav-items">
+          <button onClick={showOrHideLikeHistory} className="history-button">
+            ❤️
+          </button>
+          {showLikeHistory ? (
+            <HistoryOfLikes likedDrinkNames={likedDrinkNames} />
+          ) : null}
+          <button onClick={showOrHideForm} className="form-button">
+            +
+          </button>
+          {showForm ? (
+            <AddDrinkForm drinkList={drinkList} setDrinkList={setDrinkList} />
+          ) : null}
+        </div>
+      </div>
+    </nav>
   );
 }
 

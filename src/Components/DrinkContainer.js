@@ -23,6 +23,7 @@ function DrinkContainer({
       .map((drink) => {
         return (
           <DrinkCard
+            className="drink-card"
             key={drink.id}
             drink={drink}
             onUpdateDrink={updateDrinkLikes}
@@ -31,11 +32,7 @@ function DrinkContainer({
       });
   }
 
-  return (
-    <main>
-      <ul className="cards">{renderDrinkList()}</ul>
-    </main>
-  );
+  return <div className="cards">{renderDrinkList()}</div>;
 }
 
 export default DrinkContainer;
