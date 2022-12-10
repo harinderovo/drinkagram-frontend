@@ -18,7 +18,7 @@ function DrinkCard({ drink, onUpdateDrink }) {
   }
 
   return (
-    <li className="image-container">
+    <div className="image-container">
       <div className="image-card">
         <h2 className="title">{name}</h2>
         <h4 className="season">{season}</h4>
@@ -33,7 +33,7 @@ function DrinkCard({ drink, onUpdateDrink }) {
           <p className="description">{description}</p>
         </div>
       </div>
-    </li>
+    </div>
   );
 }
 
