@@ -9,7 +9,8 @@
 }
 
 body {
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   text-align: center;
   background-color: white;
   justify-content: center;
@@ -18,7 +19,7 @@ body {
 .image-container {
   width: 100%;
   display: flex;
-  padding: 20px;
+  padding-top: 40px;
   margin-top: 40px;
   justify-content: center;
 }
@@ -117,15 +118,15 @@ body {
 
 .nav-wrapper {
   width: 100%;
-  max-width: 1050px;
+  max-width: 1080px;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.brand-img {
-  height: 230%;
+.brand-logo {
+  height: 248%;
 }
 
 .search-box {
@@ -144,6 +145,21 @@ body {
 
 .search-box::placeholder {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.about {
+  margin: auto;
+  padding: 150px 0 280px;
+  background-color: #67576b;
+  color: white;
+  font-size: 1.4em;
+}
+
+.about-info {
+  text-align: center;
+  display: inline-block;
+  width: 70%;
+  background-color: #67576b;
 }
 
 .nav-items {
@@ -180,11 +196,11 @@ body {
 }
 
 form.new-drink-form {
-  border: solid black 1px;
-  width: 255px;
-  height: 285px;
+  height: 400px;
   background-color: white;
-  padding: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 3em;
   display: flex;
   flex-direction: column;
 }

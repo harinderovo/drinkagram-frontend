@@ -2,6 +2,10 @@ import "../App.css";
 import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import DrinkContainer from "./DrinkContainer";
+import About from "./About";
+import DrinkFormPage from "./DrinkFormPage";
+import { Route, Switch } from "react-router-dom";
+import AddDrinkForm from "./AddDrinkForm";
 
 function App() {
   const [drinkList, setDrinkList] = useState([]);
@@ -30,12 +34,20 @@ function App() {
         setDrinkList={setDrinkList}
         setSubmittedSearch={setSubmittedSearch}
       />
-      <DrinkContainer
-        addDrinkLike={addDrinkLike}
-        drinkList={drinkList}
-        setDrinkList={setDrinkList}
-        submittedSearch={submittedSearch}
-      />
+      <Switch>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/form">
+          <DrinkFormPage drinkList={drinkList} setDrinkList={setDrinkList} />
+        </Route>
+        <DrinkContainer
+          addDrinkLike={addDrinkLike}
+          drinkList={drinkList}
+          setDrinkList={setDrinkList}
+          submittedSearch={submittedSearch}
+        />
+      </Switch>
     </div>
   );
 }

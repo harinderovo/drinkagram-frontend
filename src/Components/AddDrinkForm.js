@@ -41,7 +41,6 @@ function AddDrinkForm({ drinkList, setDrinkList }) {
       <input
         onChange={handleFormChange}
         value={formData.season}
-        className
         name="season"
         placeholder="Season"
       />
